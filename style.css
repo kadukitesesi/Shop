@@ -1,0 +1,150 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+*{
+    padding:0;
+    margin: 0;
+}
+
+html{
+    font-size: 62.5%;
+}
+
+body{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 1.6rem;
+}
+
+img{
+    max-width:100%;
+    height: auto;
+}
+
+header{
+    text-align: center;
+    display: flex;
+    justify-content:center;
+    align-items: center;
+    flex-direction: column;
+}
+
+header .header-black{
+    color:white;
+    background-color:#181818;
+    height: 7vh;
+    min-width:100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+header .header-white{
+    background-color:white;
+    height: 5vh;
+    min-width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+main .wallpaper{
+    background: url(img/wallpaper.jpeg) no-repeat;
+    perspective: 1px;
+    background-size:cover;
+    background-position:center;
+    background-attachment: fixed;
+    filter: brightness(50%);
+    margin-left: 0;
+    height: 50vh;
+}
+
+main .texto_wallpaper{
+    color:white;
+    position: absolute;
+    top: 225px;
+    padding: 12px;
+    font-size: 1.7rem;
+    width:45%;
+    margin-left: 50px;
+}
+
+main .texto_wallpaper h1{
+    margin-bottom:10px;
+}
+
+main .destaques{
+    color:#111;
+    font-weight: bold;
+    text-align: center;
+    margin:5em 0 3em 0;
+}
+
+main .containers_jordan{
+    display:flex;
+    justify-content:center;
+    align-items:center;
+}
+
+main .cards_jordans{
+    display:flex;
+    justify-content: space-between;
+    flex-wrap:wrap;
+    width:80vw;
+}
+
+main .jordan{
+    width:17em;
+    height:17em;
+    background: #EBE9EA;
+    display: flex;
+    align-items:center;
+    margin-bottom: 30px;
+}
+
+@media (min-width:300px) and (max-width:600px){
+    header{
+        font-size:0.7em;
+    }
+
+    main .texto_wallpaper{
+        font-size: 0.7em;
+        position: absolute;
+        top: 30%;
+        left:-1em;
+    }
+
+}
+
+footer{
+    min-width: 100%;
+    background: #181818;
+    color: #EBE9EA;
+    text-align: center;
+    height:6vh;
+    display: flex;
+    justify-content: center;
+    align-items:center;
+}
+
+@media (max-width:700px){
+    main .texto_wallpaper{
+        text-align: center;
+        width:75%;
+    }
+
+    main .cards_jordans{
+       margin-left:10vw;
+    }
+}
+
+@media (min-width:720px) and (max-width:1100px){
+    main .texto_wallpaper{
+        position:absolute;
+        top:30%;
+        font-size: 2rem;
+        width: 60vw;
+    }
+
+    main .jordan{
+        margin: 20px 10px;
+    }
+}
